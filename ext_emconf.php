@@ -4,7 +4,7 @@ $EM_CONF[$_EXTKEY] = [
     'title' => 'Universal page browser',
     'description' => 'Provides page browsing services for extensions',
     'category' => 'fe',
-    'version' => '1.3.4',
+    'version' => '2.0.0',
     'state' => 'stable',
     'uploadfolder' => 0,
     'createDirs' => '',
@@ -16,7 +16,7 @@ $EM_CONF[$_EXTKEY] = [
         [
             'depends' =>
                 [
-                    'typo3' => '4.5.0-8.7.999',
+                    'typo3' => '8.7.0-8.7.999',
                 ],
             'conflicts' =>
                 [
