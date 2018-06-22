@@ -33,8 +33,14 @@
 							<link type="array">
 								<type>popup</type>
 								<title>Link</title>
-								<icon>link_popup.gif</icon>
-								<script>browse_links.php?mode=wizard&amp;act=file</script>
+								<icon>actions-wizard-link</icon>
+								<module>
+									<name>wizard_link</name>
+									<urlParameters type="array">
+										<mode>wizard</mode>
+										<act>file</act>
+									</urlParameters>
+								</module>
 								<params type="array">
 									<blindLinkOptions>page,url,mail,spec</blindLinkOptions>
 								</params>
