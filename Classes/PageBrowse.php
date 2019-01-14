@@ -150,7 +150,10 @@ class PageBrowse extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
 
         $this->adjustForForcedNumberOfLinks();
 
-        $this->templateCode = $this->cObj->fileResource($this->conf['templateFile']);
+        $path = $GLOBALS['TSFE']->tmpl->getFileName($this->conf['templateFile']);
+        if ($path !== null && file_exists($path)) {
+            $this->templateCode = file_get_contents($path);
+        }
 
         // Call post-init hook
         if (is_array($GLOBALS['TYPO3_CONF_VARS']['EXTCONF'][$this->extKey]['postInit'])) {
