@@ -1,9 +1,9 @@
 <?php
 
-namespace Cobweb\PageBrowse;
+namespace Flagbit\PageBrowse;
 
 /*
- * This file is part of the Cobweb/PageBrowse project under GPLv2 or later.
+ * This file is part of the Flagbit/PageBrowse project under GPLv2 or later (former Coweb/PageBrowser).
  *
  * For the full copyright and license information, please read the
  * LICENSE.md file that was distributed with this source code.
@@ -347,6 +347,7 @@ class PageBrowse extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
             'exclude' => $this->pageParameterName . ',' .
                 rawurlencode($this->pageParameterName) .
                 ',cHash',
+            'method' => 'GET',
         );
         $additionalParams = urldecode($this->cObj->getQueryArguments($queryConf));
 

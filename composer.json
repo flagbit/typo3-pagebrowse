@@ -1,5 +1,5 @@
 {
-    "name": "cobweb/pagebrowse",
+    "name": "flagbit/pagebrowse",
     "type": "typo3-cms-extension",
     "description": "Universal page browser: Provides page browsing services for extensions",
     "autoload": {
