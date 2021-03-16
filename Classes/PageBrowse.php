@@ -3,7 +3,7 @@
 namespace Flagbit\PageBrowse;
 
 /*
- * This file is part of the Flagbit/PageBrowse project under GPLv2 or later (former Coweb/PageBrowser).
+ * This file is part of the Flagbit/PageBrowse project under GPLv2 or later (former Cobweb/PageBrowser).
  *
  * For the full copyright and license information, please read the
  * LICENSE.md file that was distributed with this source code.
